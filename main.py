@@ -11,6 +11,8 @@ def fun2():
     entry1.insert(tk.END, "2")
 def fun3():
     entry1.insert(tk.END, "3")
+def funx():
+    entry1.insert(tk.END, "x")
 def fun4():
     entry1.insert(tk.END, "4")
 def fun5():
@@ -19,13 +21,18 @@ def fun6():
     entry1.insert(tk.END, "6")
 def fun7():
     entry1.insert(tk.END, "7")
+def fundiv():
+    entry1.insert(tk.END, "/")
 def fun8():
     entry1.insert(tk.END, "8")
 def fun9():
     entry1.insert(tk.END, "9")
+def funmin():
+    entry1.insert(tk.END, "-")
 def fun0():
     entry1.insert(tk.END, "0")
-
+def funplus():
+    entry1.insert(tk.END, "+")
 
 entry1 = tk.Entry(
     width=40,
@@ -67,6 +74,7 @@ buttonx = tk.Button(
     fg="black",
     width=10,
     height=5,
+    command=funx
 )
 buttonx.grid(row=1, column=3)
 button4 = tk.Button(
@@ -110,6 +118,7 @@ buttondivis = tk.Button(
     fg="black",
     width=10,
     height=5,
+    command=fundiv
 )
 buttondivis.grid(row=2, column=3)
 button7.grid(row=3, column=0)
@@ -137,6 +146,7 @@ buttonmin = tk.Button(
     fg="black",
     width=10,
     height=5,
+    command=funmin
 )
 buttonmin.grid(row=3, column=3)
 button0 = tk.Button(
@@ -154,6 +164,7 @@ buttonplus = tk.Button(
     fg="black",
     width=10,
     height=5,
+    command=funplus
 )
 buttonplus.grid(row=4, column=1)
 buttonAC = tk.Button(
