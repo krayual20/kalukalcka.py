@@ -12,7 +12,7 @@ def fun2():
 def fun3():
     entry1.insert(tk.END, "3")
 def funx():
-    entry1.insert(tk.END, "x")
+    entry1.insert(tk.END, "*")
 def fun4():
     entry1.insert(tk.END, "4")
 def fun5():
@@ -35,6 +35,11 @@ def funplus():
     entry1.insert(tk.END, "+")
 def delete():
     entry1.delete(0, tk.END)
+def funrow():
+    user_input = entry1.get()
+    entry1.delete(0, tk.END)
+    values = eval(user_input)
+    entry1.insert(tk.END, values)
 
 entry1 = tk.Entry(
     width=40,
@@ -184,6 +189,7 @@ buttoneq = tk.Button(
     fg="black",
     width=10,
     height=5,
+    command=funrow
 )
 buttoneq.grid(row=4, column=3)
 window.mainloop()
