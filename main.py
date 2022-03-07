@@ -33,6 +33,8 @@ def fun0():
     entry1.insert(tk.END, "0")
 def funplus():
     entry1.insert(tk.END, "+")
+def delete():
+    entry1.delete(0, tk.END)
 
 entry1 = tk.Entry(
     width=40,
@@ -173,6 +175,7 @@ buttonAC = tk.Button(
     fg="black",
     width=10,
     height=5,
+    command=delete
 )
 buttonAC.grid(row=4, column=2)
 buttoneq = tk.Button(
